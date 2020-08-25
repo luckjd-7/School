@@ -1,0 +1,51 @@
+(load "assignment6.lisp")
+(myList)
+(leapYear)
+(union- (list1 list2))
+(avg (aList))
+(isType (dataType))
+(taxCalculator (limit rate values))
+(clean (aFunc aList))
+(threeWayBranch (x y toExecute))
+(load "assignment6Test.lisp")
+
+
+
+(defun myList () 
+  "Return the magical list"
+
+  ; Just gotta quote things so they're data
+  '(4 (7 22) "art" ("math" (8) 99) 100)
+)
+
+; 2.)
+(defun leapYear ()
+  "Return the leap years between 1800 to 2018"    
+  (labels  ; labels for recursive closures
+    (
+      (
+        nextYear 
+        (yearList year end)
+        (cond 
+          ( ; If the year is greater than the end then return the complete list
+            (> year end) 
+            yearList
+          )
+
+          ( ; Else if it fits this special case than add for and keep going recursively
+            (and (= (mod year 100) 0) (/= (mod year 400) 0))
+            (nextYear yearList (+ year 4) 2018)
+          )
+
+          ( ; By default, add the year to the yearList, add 4, and recursively move on
+            T 
+            (nextYear (nconc yearList (list year)) (+ year 4) 2018)
+          )
+        )
+      )
+    )
+
+    ; Start the recursion with an empty list and the start year
+    (nextYear '() 1800 2018)
+  )
+)
