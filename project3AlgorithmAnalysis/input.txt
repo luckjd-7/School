@@ -1,0 +1,592 @@
+Below is data to test against your Assignment 3 code. There is to be no posting of code, but you are welcome to add the data that you are testing  as well as your results that you are getting. Have Fun Nearer the bottom of this doc, I have some randomly produced data through a random matrix generator
+
+When comparing outputs, the initial outputs given are only verified by two students so far. They are disputable. If you get something different and feel like your answer is correct, just add it next to the previous answer and we can tally up who gets what
+
+ALSO, PLEASE ADD MORE TEST CASES
+
+Just a note about some of the test cases.  He notes that each course has at least one hall that it can be taught at.  So the test cases where some of the courses have 0 halls are definitely good for testing but not relevant to the project.
+
+A Test case from the prof that broke my code
+6
+6
+C1: H1 H2
+C2: H2 H3
+C3: H1 H2
+C4: H2 H3
+C5: H4 H5 H6
+C6: H4 H5 H6
+
+Prof’s Output is 5
+Matches to 5: 9
+My output = 6
+
+4
+4
+C1: H1 H2 H3
+C2: H3 H4
+C3: H4
+C4: H3
+
+Output: 3
+
+Matches: 12
+
+----------------------------------- 
+
+
+3
+3
+C1: H1
+C2: H1 H2
+C3: H3
+
+Output: 3
+
+Matches: 12
+
+-----------------------------------
+
+6
+3
+C1: H1
+C2: H1 H2
+C3: H2
+C4: H2
+C5: H2 H3
+C6: H1  
+
+
+
+Output: 3
+
+Matches: 11
+-----------------------------------
+
+
+
+15
+12
+C1: H1 H4 H5 H9
+C2: H10
+C3: H11 H12
+C4: H2 H7 H8 H9 H10 H11
+C5: H3 H4 H6 H7
+C6: H8 H12
+C7: H7
+C8: H1 H2 H3
+C9: H3 H4 H5 H6
+C10: H1 H12
+C11: H11
+C12: H3 H8 H9 H10
+C13: H8 H9 H12
+C14: H6 H9
+C15: H4 H10
+
+
+
+Output: 12
+
+Matches: 12
+
+
+
+
+
+-----------------------------------
+7
+9
+C1: H6 H8
+C2: H1 H2
+C3: H5
+C4: H3 H7 H9
+C5: H1 H2 H4
+C6: H4
+C7: H1 H5 H8 H9
+
+
+Output: 7
+
+Matches: 11
+-----------------------------------
+4
+8
+C1: H1
+C2: H3 H4
+C3: H5 H6
+C4: H8
+
+Output: 4
+
+Matches: 13
+
+-----------------------------------
+8
+8 
+C1: H1 H2 
+C2: H2 H3 H6
+C3: H3 
+C4: H2 H4 H7 
+C5: H1 H5 H8 
+C6: H4 
+C7: H2 H6 
+C8: H4 H7 H8
+
+Fixed(in response to an earlier note)
+
+Output: 8
+
+Matches: 9
+
+-----------------------------------
+4
+4
+C1: H1
+C2: H1 H2
+C3: H1 H2 H3
+C4: H1 H2 H3 H4
+
+Output: 4
+
+Matches: 8
+
+-----------------------------------
+4
+4
+C1: H1 H2 H3 H4
+C2: H1 H2 H3
+C3: H1 H2
+C4: H1
+
+Output: 4
+
+Matches: 6
+
+
+-----------------------------------
+
+4
+4
+C1: H1 H2 H3 H4
+C2: H1 H2 H3
+C3: H1 H2
+C4: H1
+
+
+Output: 4
+*shouldn’t this output be 4? C1: H4, C2: H3, C3: H2, C4: H1
+YES
+
+-----------------------------------
+
+6
+6
+C1: H2 H3
+C2: 
+C3: H1 H4
+C4: H3
+C5: H3 H4
+C6: H6
+
+Output: 5
+
+Matches: 5
+
+-----------------------------------
+
+4
+4
+C1: H2 H3
+C2: H1
+C3: H2
+C4: H2 H4
+
+Output: 4
+
+Matches: 5
+
+-----------------------------------
+
+6
+6
+C1: H2 H3
+C2:
+C3: H1 H4
+C4: H3
+C5: H3 H4
+C6: H6
+
+Output: 5
+
+Matches: 5
+
+-------------------------------------------
+Begin randomly generated graphs
+--------------------------------------------
+35
+59
+C1: H21 H24 H25 H34
+C2: H20 H30 H34 H40
+C3: H6 H56
+C4: H2
+C5: H6 H41
+C6: H1 H18 H34
+C7: H25 H38 H39
+C8: H20 H37 H38
+C9: H7 H26 H40 H55 H57
+C10: H11 H24 H32 H48
+C11: H24 H32
+C12: H10 H31
+C13: H2 H18 H22 H52
+C14: H24
+C15: H41
+C16: H2 H50
+C17: H14 H36
+C18: H10 H48 H55 H59
+C19: H9 H11 H21 H28 H44
+C20: H11 H46
+C21: H45 H53 H55
+C22: H4 H17 H58
+C23: H15 H28 H37 H40 H46
+C24: H48
+C25: H12 H40
+C26: H21 H29 H35 H53
+C27: H6 H12 H21 H47 H53
+C28: H17 H19 H25 H39 H58
+C29: H7 H42 H52
+C30: H26 H29 H51
+C31: H10
+C32: H11
+C33: H1 H6 H56 H57 H58
+C34: H38 H44 H46 H49
+C35:
+
+Output: 33
+
+Match: 6
+----------------------------------------------------------------------------
+
+// Test deleted due to missing info… care copying..don’t partially delete things
+
+------------------------------
+
+
+
+35
+59
+C1: H21 H24 H25 H34
+C2: H20 H30 H34 H40
+C3: H6 H56
+C4: H2
+C5: H6 H41
+C6: H1 H18 H34
+C7: H25 H38 H39
+C8: H20 H37 H38
+C9: H7 H26 H40 H55 H57
+C10: H11 H24 H32 H48
+C11: H24 H32
+C12: H10 H31
+C13: H2 H18 H22 H52
+C14: H24
+C15: H41
+C16: H2 H50
+C17: H14 H36
+C18: H10 H48 H55 H59
+C19: H9 H11 H21 H28 H44
+C20: H11 H46
+C21: H45 H53 H55
+C22: H4 H17 H58
+C23: H15 H28 H37 H40 H46
+C24: H48
+C25: H12 H40
+C26: H21 H29 H35 H53
+C27: H6 H12 H21 H47 H53
+C28: H17 H19 H25 H39 H58
+C29: H7 H42 H52
+C30: H26 H29 H51
+C31: H10
+C32: H11
+C33: H1 H6 H56 H57 H58
+C34: H38 H44 H46 H49
+C35:
+
+Output: 33
+Matches: 1
+
+// there was another test here… 
+// be careful copying and pasting. Had to remove the test because half of it was deleted
+---------------------------------------------------
+83
+80
+C1: H24 H76
+C2: H4 H19 H53
+C3: H75
+C4: H36 H39
+C5: H18 H60 H66 H77
+C6: H22 H23 H25 H27 H37 H42 H55 H60
+C7: H42 H51
+C8: H54 H55 H64
+C9: H43 H51 H55
+C10: H43 H76
+C11: H5 H56 H67
+C12: H15 H17 H42 H70
+C13: H5 H68
+C14: H46 H76
+C15: H33 H34 H45 H73
+C16: H19 H25 H35 H48
+C17: H5 H9 H36
+C18: H2 H3 H6 H46 H71
+C19: H32 H54 H64
+C20: H6 H13 H38 H66 H67
+C21: H24 H40 H69
+C22: H11 H17 H51
+C23: H3
+C24:
+C25: H71
+C26: H62
+C27: H63 H73
+C28: H8 H10 H16 H21 H29 H57 H63
+C29: H4 H16 H78
+C30: H40 H41 H43 H58 H66 H80
+C31: H23 H35
+C32: H21 H27 H39 H45
+C33: H17
+C34: H24 H61
+C35: H57 H69
+C36: H41 H42 H45 H52
+C37: H16 H60 H71
+C38: H67
+C39: H37 H53
+C40: H10 H21 H39
+C41: H17 H62
+C42: H56 H73
+C43: H49
+C44: H29 H34 H44 H54
+C45: H7 H32
+C46: H72
+C47: H24 H29
+C48: H6 H14 H33
+C49: H2 H51
+C50:
+C51: H38
+C52: H23 H47 H52
+C53: H7 H20 H36 H66
+C54: H10 H68 H71 H75
+C55: H13 H22 H50 H58
+C56: H6 H31
+C57: H5 H32 H53
+C58: H2 H5 H17
+C59: H29 H55
+C60: H10 H11 H24 H32
+C61:
+C62: H8 H28 H51 H65
+C63: H69
+C64: H32 H71
+C65: H2 H22
+C66: H17 H57 H61 H70 H73 H74
+C67: H25 H79
+C68: H9 H28 H36 H47 H55 H60
+C69:
+C70: H26 H76
+C71: H69 H74
+C72: H13 H55
+C73: H3 H32 H49 H70
+C74: H36
+C75:
+C76: H12
+C77: H51
+C78: H72
+C79: H13 H25 H31 H61 H74
+C80: H3 H12 H45 H51
+C81: H1 H25 H52
+C82: H4
+C83:
+
+
+Output: 73 
+
+Match for 75:
+Match for 73: 7
+Match for 72: ignore this one...hehehe
+----------------------------------------------
+
+65
+80
+C1:
+C2: H1 H13 H29 H73
+C3: H36 H41 H43 H46
+C4: H6 H28 H44 H52 H79
+C5: H78
+C6: H19 H43 H44 H78
+C7: H32 H73
+C8: H28 H52 H56 H68
+C9:
+C10:
+C11: H16 H52 H69
+C12: H6 H15
+C13: H15 H24
+C14: H32
+C15: H31 H44
+C16: H4 H19
+C17: H9 H29 H48 H50
+C18: H15 H41 H45 H47 H71
+C19: H16
+C20: H19 H40 H49 H60 H78
+C21: H42 H52
+C22: H53 H55 H66
+C23: H22 H24 H75
+C24: H38
+C25:
+C26: H1
+C27: H57
+C28: H5 H11 H59 H61
+C29: H9 H11 H27 H28
+C30: H30 H51 H62 H67 H70
+C31: H23
+C32: H6 H39 H73
+C33: H60 H72 H75 H76
+C34:
+C35: H39 H49
+C36: H5 H45
+C37: H5 H60 H65
+C38: H22 H36 H41 H46 H71
+C39: H12 H20 H58
+C40: H41 H42 H68 H70 H73
+C41: H57 H64
+C42: H5 H17 H57 H62 H75
+C43: H36 H37
+C44: H4 H19 H33 H36 H44 H72
+C45: H26 H69
+C46: H2 H26 H35 H45
+C47:
+C48: H14 H70
+C49: H25 H33 H49 H50 H73 H74
+C50: H37 H66 H67
+C51: H44
+C52: H44 H68
+C53: H4 H26 H38 H69
+C54: H1 H20 H78
+C55: H26 H51
+C56: H13 H23 H69 H72
+C57: H3 H34 H56 H59
+C58: H2 H54
+C59: H11 H12 H27 H31 H37
+C60:
+C61: H9 H14 H17
+C62: H18 H45 H53 H56
+C63: H7
+C64: H52 H53
+C65:
+
+
+Output: 57
+
+Match: 5
+
+100
+93
+C1: H33 H58 H77 H83
+C2: H26 H62
+C3: H48 H66
+C4: H20
+C5: H13 H65 H67
+C6: H16 H32 H48 H67 H72
+C7: H75
+C8: H18
+C9: H76
+C10: H47 H56 H87
+C11: H13 H25 H65
+C12:
+C13:
+C14: H10 H19 H21
+C15: H12 H33 H55 H63 H70
+C16: H81
+C17: H3
+C18: H32 H57 H62
+C19: H29 H59 H86
+C20: H18 H29 H44 H52 H56 H83
+C21: H47 H65
+C22: H48 H54
+C23: H64 H71
+C24: H15 H88
+C25: H39 H79
+C26: H3 H8 H14 H19 H92
+C27: H8 H28
+C28: H51 H78 H86
+C29: H9 H41
+C30: H50
+C31: H6 H20 H24 H54
+C32: H32 H92
+C33: H66
+C34: H50 H76
+C35: H56
+C36: H28 H44 H57
+C37: H2 H20 H75 H83
+C38: H30 H48 H58
+C39: H11 H12 H61
+C40: H17 H50 H93
+C41: H58
+C42: H17 H27 H45
+C43: H20 H61
+C44:
+C45: H46 H81 H92
+C46: H2 H17 H42 H49 H75 H89
+C47: H6 H9 H33
+C48: H37 H59 H72 H76
+C49: H22 H68
+C50: H18
+C51: H11 H69 H87
+C52: H42
+C53: H7 H15
+C54: H17 H39
+C55: H31 H47
+C56: H68
+C57: H43 H73 H85
+C58: H5 H8 H11 H15 H17 H20 H39
+C59: H87
+C60: H22 H77
+C61: H55 H58 H59 H93
+C62: H5 H18 H34
+C63: H17 H30 H36 H45
+C64: H6
+C65: H25 H77
+C66: H38 H71
+C67: H35
+C68:
+C69: H22 H40 H50 H65
+C70: H48 H79
+C71: H22
+C72: H70 H80
+C73: H52
+C74: H17 H52 H55 H70 H82
+C75: H15 H49 H70
+C76: H62
+C77: H17 H24 H92
+C78: H9 H23
+C79:
+C80: H26 H43 H84
+C81: H8 H12 H29 H75
+C82: H12 H22 H41
+C83: H31
+C84: H12 H81
+C85: H29 H62 H63 H80
+C86: H48 H72
+C87: H29 H83
+C88:
+C89: H2 H59 H85
+C90: H91
+C91:
+C92:
+C93: H41 H58 H60
+C94: H2 H79
+C95: H15 H54
+C96: H64 H70
+C97: H7 H41 H58
+C98: H59 H65 H93
+C99: H28 H70 H79
+C100: H61 H69 H91
+
+Output: 83
+
+Match: 4 
+
+
