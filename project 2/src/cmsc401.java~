@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class cmsc401 {
+    private static int totalGardenSize;
+    private static int[][] SortedFarmArray(){
+        Scanner input = new Scanner(System.in);
+        int size = input.nextInt();
+       int[][] farm = new int[size][2];
+       for(int i = 0;i < size; i++){
+           farm[i][0] = input.nextInt();
+           farm[i][1] = input.nextInt();
+           totalGardenSize = totalGardenSize + farm[i][1];
+       }
+       SortPipeline(farm,0,size-1);
+       return farm;
+    }
+    private static int PartitionPipeline(int[][] farm, int left, int right)
+    {
+        int i = left, j = right;
+        int temp;
+        int tempGarden;
+        int pivot = farm[(left + right) / 2][0];
+        while (i <= j) {
+            while (farm[i][0] < pivot)
+                i++;
+            while (farm[j][0] > pivot)
+                j--;
+            if (i <= j) {
+                temp = farm[i][0];
+                tempGarden = farm[i][1];
+                farm[i][0] = farm[j][0];
+                farm[i][1] = farm[j][1];
+                farm[j][0] = temp;
+                farm[j][1] = tempGarden;
+                i++;
+                j--;
+            }
+        };
+        return i;
+    }
+    private static void SortPipeline(int[][] farm, int left, int right) {
+        int index = PartitionPipeline(farm, left, right);
+        if (left < index - 1)
+            SortPipeline(farm, left, index - 1);
+        if (index < right)
+            SortPipeline(farm, index, right);
+    }
+    private static int IdealPipeLine(int[][] farm, int index, int sum){
+        int ideal = 0;
+        if(sum<Math.floor((double)totalGardenSize/2.0)){
+            sum = farm[index][1] + sum;
+            ideal = IdealPipeLine(farm,index+1,sum);
+        }
+        else{
+            return (int)Math.floor((double)(farm[index-1][0]+farm[index][0])/2.0);
+        }
+        return ideal;
+    }
+    public static void main(String[] args) {
+        int y = IdealPipeLine(SortedFarmArray(),0,0);
+        System.out.println(y);
+    }
+}
